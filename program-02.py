@@ -8,3 +8,13 @@ addition = num1 + num2
 print("Addition of " + str(num1) + " and " + str(num2) + " = " + str(addition)) # Str + Str
 print("Addition of ",num1,"and ",num2," = ",addition) # String + int
 print(f'Addition of {num1} and {num2} = {addition}') # F-string
+
+
+
+#Division
+
+num3 = float(input("Enter the first number for division: "))
+num4 = float(input("Enter the second number for division: "))
+
+division = num3 -num4
+print(f'Division of {num3} and {num4} = {division}')
