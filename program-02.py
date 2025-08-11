@@ -18,4 +18,4 @@ num4 = float(input("Enter the second number for division: "))
 
 division = num3 -num4
 print(f'Division of {num3} and {num4} = {division}')
-print(f"The division of {num3} and {num4} = {int(division)")
+print(f"The division of {num3} and {num4} = {int(division)"})
