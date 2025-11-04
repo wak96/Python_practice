@@ -397,4 +397,30 @@ else:
 
 ---
 
+python
+ch = str(input("Enter any keyword: "))
+
+# Check if any vowel exists inside the word
+if any(vowel in ch.lower() for vowel in "aeiou"):
+    print("It's vowel")
+else:
+    print("It's not")
+
+# it cheecks only words
+# used lower() function
+ch = str(input("Enter any keyword: "))
+
+if ch.lower() in "aeiou":
+    print("It's vowil")
+else:
+    print("It's not")
+
+#used upper()function
+
+ch = input("Enter any keyword: ")
+
+if ch.upper() in "aeiou":
+    print("It's vowel")
+else:
+    print("It's not")
 
