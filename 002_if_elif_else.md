@@ -401,6 +401,23 @@ python
 ch = str(input("Enter any keyword: "))
 
 # Check if any vowel exists inside the word
+ch = input("Enter any word: ")
+vowels = ["a", "e", "i", "o", "u"]
+found = False
+
+for v in vowels:
+    if v in ch.lower():
+        found = True
+        break
+if found:
+    print("There is vowels")
+else:
+    print("No vowels found")
+
+or
+
+ch = str(input("Enter any keyword: "))
+
 if any(vowel in ch.lower() for vowel in "aeiou"):
     print("It's vowel")
 else:
