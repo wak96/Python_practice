@@ -1,10 +1,5 @@
 # 🧠 Python if, elif, else Examples (বাংলা ব্যাখ্যাসহ)
 
-নিচে দেওয়া হলো ১০টি ধাপে ধাপে সাজানো উদাহরণ —  
-সহজ থেকে একটু কঠিন, প্রতিটি কোডের নিচে বাংলা ব্যাখ্যা যুক্ত।
-
----
-
 ## 🧩 উদাহরণ–১: ধনাত্মক, ঋণাত্মক, না শূন্য সংখ্যা
 
 ```python
@@ -16,12 +11,11 @@ elif num < 0:
     print("ঋণাত্মক সংখ্যা")
 else:
     print("শূন্য")
-````
+```
 
 🔹 **ব্যাখ্যা:**
 `if` শর্ত প্রথমে পরীক্ষা করে — তারপর না মিলে গেলে `elif`, সবশেষে `else`।
 
----
 
 ## 🧩 উদাহরণ–২: বয়স অনুযায়ী ক্যাটাগরি নির্ধারণ
 
@@ -206,10 +200,9 @@ else:
 
 ---
 
-````markdown
 # 🧠 Python if–elif–else Examples (Part–2)
 
-## 🧩 Example 1: Discount Calculation
+## 🧩 উদাহরণ–১১: Discount Calculation
 ```python
 price = float(input("Enter total price: "))
 
@@ -222,28 +215,12 @@ else:
 
 print("Discount:", discount)
 print("Final Price:", price - discount)
-````
+```
 
 **ব্যাখ্যা:** ক্রয়ের পরিমাণ অনুযায়ী ডিসকাউন্ট নির্ধারণ।
 
----
 
-## 🧩 Example 2: Voting Eligibility
-
-```python
-age = int(input("Enter age: "))
-
-if age >= 18:
-    print("Eligible for voting ✅")
-else:
-    print("Not eligible ❌")
-```
-
-**ব্যাখ্যা:** বয়স ১৮ বা তার বেশি হলে ভোট দিতে পারে।
-
----
-
-## 🧩 Example 3: Password Strength Checker
+## 🧩 উদাহরণ–১২: Password Strength Checker
 
 ```python
 password = input("Enter password: ")
@@ -260,7 +237,7 @@ else:
 
 ---
 
-## 🧩 Example 4: Student Attendance Check
+## 🧩 উদাহরণ–১৩: Student Attendance Check
 
 ```python
 attendance = int(input("Enter attendance percentage: "))
@@ -275,7 +252,7 @@ else:
 
 ---
 
-## 🧩 Example 5: Electricity Bill Calculator
+## 🧩 উদাহরণ–১৪: Electricity Bill Calculator
 
 ```python
 unit = int(input("Enter electricity units: "))
@@ -294,7 +271,7 @@ print("Total Bill:", bill, "Tk")
 
 ---
 
-## 🧩 Example 6: Month Name from Number
+## 🧩 উদাহরণ–১৫: Month Name from Number
 
 ```python
 month = int(input("Enter month number (1-12): "))
@@ -313,7 +290,7 @@ else:
 
 ---
 
-## 🧩 Example 7: BMI Category
+## 🧩 উদাহরণ–১৬: BMI Category
 
 ```python
 bmi = float(input("Enter BMI value: "))
@@ -332,24 +309,7 @@ else:
 
 ---
 
-## 🧩 Example 8: Temperature Message (Fahrenheit)
-
-```python
-temp = float(input("Enter temperature in °F: "))
-
-if temp >= 100:
-    print("Too Hot 🔥")
-elif temp >= 60:
-    print("Pleasant 🌤️")
-else:
-    print("Cold ❄️")
-```
-
-**ব্যাখ্যা:** তাপমাত্রা অনুযায়ী পরিবেশের অবস্থা।
-
----
-
-## 🧩 Example 9: Simple Calculator
+## 🧩 উদাহরণ–১৭: Simple Calculator
 
 ```python
 a = float(input("Enter first number: "))
@@ -372,7 +332,7 @@ else:
 
 ---
 
-## 🧩 Example 10: Exam Result with Bonus
+## 🧩 উদাহরণ–১৮: Exam Result with Bonus
 
 ```python
 marks = int(input("Enter marks: "))
@@ -400,7 +360,7 @@ else:
 python
 ch = str(input("Enter any keyword: "))
 
-# Check if any vowel exists inside the word
+## 🧩 উদাহরণ–১৯: Check if any vowel exists inside the word
 ch = input("Enter any word: ")
 vowels = ["a", "e", "i", "o", "u"]
 found = False
@@ -440,4 +400,173 @@ if ch.upper() in "aeiou":
     print("It's vowel")
 else:
     print("It's not")
+
+
+
+## 🧩 উদাহরণ–২০: সংখ্যা ৩ দিয়ে ও ৫ দিয়ে বিভাজ্য কিনা
+
+```python
+num = 15
+
+if num % 3 == 0 and num % 5 == 0:
+    print("৩ এবং ৫ দুটো দিয়েই বিভাজ্য ✅")
+elif num % 3 == 0:
+    print("শুধু ৩ দিয়ে বিভাজ্য")
+elif num % 5 == 0:
+    print("শুধু ৫ দিয়ে বিভাজ্য")
+else:
+    print("কোনোটাতেই নয় ❌")
+```
+
+## 🧩 উদাহরণ–২১: ব্যবহারকারীর স্কোর অনুযায়ী লেভেল নির্ধারণ
+
+```python
+score = 450
+
+if score >= 1000:
+    level = "Pro Gamer"
+elif score >= 500:
+    level = "Intermediate"
+elif score >= 100:
+    level = "Beginner"
+else:
+    level = "Newbie"
+
+print("Your level:", level)
+print(f"your level: {level}")
+```
+
+---
+
+## 🧩 উদাহরণ–২২: লগইন + এক্সেস লেভেল (Nested)
+
+```python
+username = "admin"
+password = "1234"
+access = "super"
+
+if username == "admin" and password == "1234":
+    if access == "super":
+        print("Super Access Granted ✅")
+    else:
+        print("Limited Access 🔐")
+else:
+    print("Login Failed ❌")
+```
+
+---
+
+## 🧩 উদাহরণ–২৩: শর্ট হ্যান্ড if-else চেইন
+
+```python
+marks = 85
+grade = "A+" if marks >= 80 else "A" if marks >= 70 else "F"
+print("Grade:", grade)
+```
+
+---
+
+## 🧩 উদাহরণ–২৪: বয়স অনুযায়ী টিকেটের দাম (Nested)
+
+```python
+age = 10
+
+if age < 5:
+    price = 0
+elif age < 18:
+    price = 50
+elif age < 60:
+    price = 100
+else:
+    price = 70
+
+print("টিকেটের দাম:", price, "৳")
+```
+
+---
+
+## 🧩 উদাহরণ–২৫: পাসওয়ার্ডের দৈর্ঘ্য চেক
+
+```python
+password = "pass123"
+
+if len(password) < 6:
+    print("Password খুব ছোটো ❌")
+elif len(password) <= 10:
+    print("Password ঠিক আছে ✅")
+else:
+    print("Password খুব বড় 📏")
+```
+
+---
+
+## 🧩 উদাহরণ–২৬: তিনটি কন্ডিশনে Nested Decision
+
+```python
+age = 25
+citizen = True
+criminal = False
+
+if age >= 18:
+    if citizen:
+        if not criminal:
+            print("তুমি ভোট দিতে পারবে ✅")
+        else:
+            print("তোমার অপরাধ রেকর্ড আছে ❌")
+    else:
+        print("তুমি নাগরিক নও ❌")
+else:
+    print("অপ্রাপ্তবয়স্ক ❌")
+```
+
+---
+
+## 🧩 উদাহরণ–২৭: সময় অনুযায়ী শুভেচ্ছা বার্তা
+
+```python
+hour = 14  # ২৪ ঘণ্টা ফরম্যাট
+
+if 0 <= hour < 12:
+    print("শুভ সকাল ☀️")
+elif 12 <= hour < 18:
+    print("শুভ বিকেল 🌤️")
+else:
+    print("শুভ রাত্রি 🌙")
+```
+
+---
+
+## 🧩 উদাহরণ–২৮: শিক্ষার্থীর উপস্থিতি অনুযায়ী রেজাল্ট
+
+```python
+marks = 78
+attendance = 85
+
+if marks >= 60:
+    if attendance >= 75:
+        print("পাস ✅")
+    else:
+        print("অনুপস্থিতির কারণে ফেল ❌")
+else:
+    print("নম্বরের কারণে ফেল ❌")
+```
+
+---
+
+## 🧩 উদাহরণ–২৯: ইউজারের বয়স ও সাবস্ক্রিপশন চেক (Ternary mix)
+
+```python
+age = 21
+subscribed = True
+
+message = (
+    "Full Access ✅" if age >= 18 and subscribed
+    else "Limited Access 🔐" if age >= 18
+    else "Access Denied ❌"
+)
+
+print(message)
+```
+
+---
 
