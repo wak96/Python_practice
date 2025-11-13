@@ -570,3 +570,15 @@ print(message)
 
 ---
 
+Note: % এই চিহ্ন কে modulus operator বলে।
+এর কাজ হলো ভাগশেষ ( reminder ) বের করা। 
+Ex: 6 % 2 = 0 (Reminder)
+      6 / 2 = 3 (Quotient)
+** Integer Division
+a = 5 b = 9
+Divide = a // b
+
+Getting both:
+quotient, reminder = divmod(a,b)
+print( quotient, reminder)
+
