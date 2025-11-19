@@ -582,3 +582,53 @@ Getting both:
 quotient, reminder = divmod(a,b)
 print( quotient, reminder)
 
+-------------------------------------------------------------------------------
+
+username = str(input("Username: "))
+email = str(input("Email: "))
+password = str(input("Password: "))
+
+user = ["kawsar", "wak", "arif"]
+email_data = ["kawsar@gmail.com", "wak@gmail.com", "arif@gmail.com"]
+password_data = "1234"
+
+
+
+
+if username in user and email in email_data and password == password_data:
+    print(f"Hello {username}")
+elif username in user and email in email_data and password != password_data:
+    print(f"password incorrect")
+elif password == password_data and username in user and email not in email_data:
+    print('email are incorrent')
+elif password == password_data and email in email_data and username not in user:
+    print(f'incorrect username: {username}')
+else:
+    print("no data found")
+
+
+----------------------------------------------------------------------------
+
+
+username = str(input("Username: "))
+email = str(input("Email: "))
+password = str(input("Password: "))
+
+user = ["kawsar", "wak", "arif"]
+email_data = ["kawsar@gmail.com", "wak@gmail.com", "arif@gmail.com"]
+password_data = "1234"
+
+
+if username in user:
+    i = user.index(username)
+
+if username in user[i] and email in email_data[i] and password == password_data:
+    print(f"Hello {username}")
+elif username in user[i] and email in email_data[i] and password != password_data:
+    print(f"password incorrect")
+elif password == password_data and username in user[i] and email not in email_data[i]:
+    print('email are incorrent')
+elif password == password_data and email in email_data[i] and username not in user[i]:
+    print(f'incorrect username: {username}')
+else:
+    print("no data found")
